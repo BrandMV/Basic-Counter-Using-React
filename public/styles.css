@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background: #FFAFBD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+h1{
+    font-size: 6rem;
+}
+p{
+    font-size: 2rem;
+}
+.btn-func{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    height: 20%;
+    width: 100%;
+    margin-top: 50px;
+}
+.btn-func button{
+    border-style: none;
+    color: white;
+    width: 5rem;
+    height: 5rem;
+    font-size: 4rem;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    border-radius: 4px;
+    box-shadow:  0 1px 2px rgba(0, 0, 0, 0.315);
+    outline: none;
+
+}
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    max-height: 100vh;
+    height: 100vh;
+}
+#jump{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    
+    width: 50%;
+    height: 50%;
+    margin-left: 20rem;  
+}
+
+#counter{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid gray;
+    width: 50%;
+    height: 50%;
+    margin-right: 20rem;
+}
+
+@media screen and (max-width: 1024px){
+
+    #jump{
+        margin-left: 10rem;
+
+    }
+    #counter{
+        margin-right: 10rem;
+    }
+    .btn-func button{
+        width: 4rem;
+        height: 4rem;
+     
+    }
+}
+
+
+@media screen and (max-width: 500px){
+
+    #jump{
+        margin-left: 2rem;
+
+    }
+    #counter{
+        margin-right: 2rem;
+    }
+    .btn-func button{
+        width: 4rem;
+        height: 4rem;
+     
+    }
+}
+@media screen and (max-width: 420px){
+
+    #jump{
+        margin-left: 2rem;
+
+    }
+    #counter{
+        margin-right: 2rem;
+    }
+    .btn-func button{
+        width: 3rem;
+        height: 3rem;
+        font-size: 2rem;
+     
+    }
+}
+@media screen and (max-width: 360px){
+
+    #jump{
+
+        margin-left: 1rem;
+    }
+    #counter{
+        margin-right: 1rem;
+    }
+    .btn-func button{
+        width: 3rem;
+        height: 3rem;
+        font-size: 2rem;
+     
+    }
+}
